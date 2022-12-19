@@ -1,0 +1,1 @@
+# About stack-cleiton-docker_on_wsl2 stack

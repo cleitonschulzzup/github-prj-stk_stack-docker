@@ -1,0 +1,9 @@
+type: app
+description: Default stackfile usecase description
+# template used to create the project
+template: stack-cleiton-docker_on_wsl2/template-wsl-docker-helloworld
+#plugins:
+  #- plugin: stack-cleiton-docker_on_wsl2/plugin-derruba-container
+  #- plugin: stack-cleiton-docker_on_wsl2/plugin-validacao-so-docker-engine
+
+

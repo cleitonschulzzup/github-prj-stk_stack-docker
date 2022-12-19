@@ -1,0 +1,33 @@
+{
+  "stack_name": "stack-cleiton-docker_on_wsl2",
+  "stack_type": "local",
+  "stack_path": "/mnt/c/Users/cschulz/vs-cschulz-code/github-prj-stackspot/stackspot/stack-cleiton-docker_on_wsl2",
+  "stack_remote": [],
+  "plugins": {
+    "plugin-derruba-container": {
+      "description": "derruba container antes de subir nova versao",
+      "types": [
+        "app"
+      ],
+      "path": "/home/cschulzubuntu/.stk/stacks/stack-cleiton-docker_on_wsl2/plugin-derruba-container",
+      "latest_version": "No release"
+    },
+    "plugin-validacao-so-docker-engine": {
+      "description": "valida se bin\u00e1rios est\u00e3o habilitados antes do uso do docker file/run",
+      "types": [
+        "app"
+      ],
+      "path": "/home/cschulzubuntu/.stk/stacks/stack-cleiton-docker_on_wsl2/plugin-validacao-so-docker-engine",
+      "latest_version": "No release"
+    },
+    "template-wsl-docker-helloworld": {
+      "description": "teste",
+      "types": [
+        "app-template"
+      ],
+      "path": "/home/cschulzubuntu/.stk/stacks/stack-cleiton-docker_on_wsl2/template-wsl-docker-helloworld",
+      "latest_version": "No release"
+    }
+  },
+  "tasks": {}
+}

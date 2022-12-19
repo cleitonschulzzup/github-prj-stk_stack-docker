@@ -1,0 +1,22 @@
+name: plugin-derruba-container
+description: derruba container antes de subir nova versao
+display-name: plugin-derruba-container
+picture: plugin.png
+category: backend # Ref: https://docs.stackspot.com/docs/create-stacks/yaml-files/plugin/#category
+compatibility:
+  - java
+  - spring
+about: docs/about.md
+usage: docs/usage.md
+use-case: docs/use-case.md
+implementation: docs/implementation.md
+technologies: # Ref: https://docs.stackspot.com/docs/create-stacks/yaml-files/yaml/#technologies
+  - "Api"
+types:
+  - app
+
+hooks:
+  - type: run
+    trigger: before-render
+    linux:
+      - sudo bash {{stack_path}}/scripts/derruba_container.sh

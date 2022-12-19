@@ -1,0 +1,40 @@
+name: template-wsl-docker-helloworld
+description: teste
+types:
+  - app-template
+inputs:
+  - label: Project name
+    type: text
+    name: project_name
+    default: project-name
+  - label: Project description
+    type: text
+    name: project_description
+  - label: Imagem nginx
+    type: text
+    name: imagem_nginx
+    default: nginx
+  - label: Ativar modo debug?
+    type: bool
+    name: debugmode
+    required: true
+    default: No
+
+computedInputs:
+  descricao_upper: "{{inputs.project_description | title }}"
+
+
+hooks:
+  - type: run
+    trigger: after-render
+    linux:
+      - bash -c {{stack_path}}/{{project_name}}/scripts/oi.sh
+  - type: run
+    trigger: after-render
+    linux:
+      - sudo bash {{stack_path}}/{{project_name}}/scripts/derruba_container.sh
+  - type: run
+    trigger: after-render
+    linux:
+      - sudo docker run -p 8080:80 --name container-{{project_name}} -v {{stack_path}}/{{project_name}}/index.html:/usr/share/nginx/html/index.html:ro -d stackspot/teste01 nginx-debug -g 'daemon off;'
+      - cmd.exe /C start http://localhost:8080

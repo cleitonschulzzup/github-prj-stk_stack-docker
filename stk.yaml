@@ -1,0 +1,85 @@
+applied_templates:
+- inputs: {}
+  template_data_path: ''
+- inputs:
+    Filename: conexaodb
+    Filenameextension: sql
+    driver: Oracle
+    faz_isso: true
+    login: cschulz
+    login_pass: '***'
+    stringdb: home
+  template_data_path: stack-exemplo-explicacao/exemplo-plugin
+- inputs:
+    Filename: conexaodb
+    Filenameextension: sql
+    driver: Oracle
+    faz_isso: true
+    login: cschulz
+    login_pass: '***'
+    stringdb: homealone
+  template_data_path: stack-exemplo-explicacao/exemplo-plugin
+- inputs:
+    Filename: oracledb
+    Filenameextension: ora
+    driver: Oracle
+    faz_isso: true
+    login: cschulz
+    login_pass: '***'
+  template_data_path: stack-exemplo-explicacao/exemplo-plugin
+- inputs:
+    Filename: mysqldb
+    Filenameextension: sql
+    driver: Mysql
+    faz_isso: false
+    login: cschulz
+    login_pass: '***'
+  template_data_path: stack-exemplo-explicacao/exemplo-plugin
+- inputs:
+    Filename: mysqldbfile
+    Filenameextension: sql
+    driver: Mysql
+    faz_isso: true
+    login: cschulz
+    login_pass: '***'
+    stringdb: mysqlinstance
+  template_data_path: stack-exemplo-explicacao/exemplo-plugin
+- inputs:
+    Filename: mysqldbfile
+    Filenameextension: sql
+    driver: Mysql
+    faz_isso: false
+    login: cschulz
+    login_pass: '***'
+    stringdb: mysqlinstance
+  template_data_path: stack-exemplo-explicacao/exemplo-plugin
+- inputs:
+    Filename: oracledbfile
+    Filenameextension: ora
+    driver: Oracle
+    faz_isso: true
+    login: cschulz
+    login_pass: '***'
+    oracleinstance: oracledb
+  template_data_path: stack-exemplo-explicacao/exemplo-plugin
+- inputs:
+    Filename: oracledbfile
+    Filenameextension: ora
+    driver: Oracle
+    faz_isso: false
+    login: cschulz
+    login_pass: '***'
+    stringdb: oracledb
+  template_data_path: stack-exemplo-explicacao/exemplo-plugin
+- inputs: {}
+  template_data_path: /plugin-validacao-so-docker-engine
+- inputs: {}
+  template_data_path: /plugin-validacao-so-docker-engine
+- inputs: {}
+  template_data_path: /plugin-validacao-so-docker-engine
+- inputs: {}
+  template_data_path: /plugin-validacao-so-docker-engine
+global_computed_inputs: {}
+global_inputs: {}
+stack: stack-spot
+stack_type: app

@@ -1,0 +1,3 @@
+stackpath={{stack_path}}
+debugmode={{inputs.debugmode}}
+projectname={{project_name}}

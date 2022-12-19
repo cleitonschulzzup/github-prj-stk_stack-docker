@@ -1,0 +1,22 @@
+name: plugin-validacao-so-docker-engine
+description: valida se binários estão habilitados antes do uso do docker file/run
+display-name: plugin-validacao-so-docker-engine
+picture: plugin.png
+category: backend # Ref: https://docs.stackspot.com/docs/create-stacks/yaml-files/plugin/#category
+compatibility:
+  - java
+  - spring
+about: docs/about.md
+usage: docs/usage.md
+use-case: docs/use-case.md
+implementation: docs/implementation.md
+technologies: # Ref: https://docs.stackspot.com/docs/create-stacks/yaml-files/yaml/#technologies
+  - "Api"
+types:
+  - app
+
+hooks:
+  - type: run
+    trigger: before-input
+    linux:
+      - bash -c {{stack_path}}/scripts/oi.sh

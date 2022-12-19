@@ -1,0 +1,7 @@
+login=cschulz
+senha=senha123
+conexaodb=oracledb
+senha=passora
+conexaodb=
+driver=Oracle
+oi=Falseoi=True
