@@ -1,0 +1,3 @@
+[submodule "exemplo-plugin"]
+	path = exemplo-plugin
+	url = https://github.com/cleitonschulzzup/exemplo-plugin.git
